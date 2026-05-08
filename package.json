@@ -1,0 +1,35 @@
+{
+  "name": "osov-offline-tx-poc",
+  "version": "0.1.0",
+  "private": true,
+  "description": "OmniSovereign Pillar 1: offline Solana SPL transfers via Durable Nonces, relayed over Hyperswarm.",
+  "scripts": {
+    "setup": "tsx src/scripts/setup.ts",
+    "keygen": "tsx src/scripts/generateKey.ts",
+    "sender": "tsx src/scripts/runSender.ts",
+    "receiver": "tsx src/scripts/runReceiver.ts",
+    "bridge": "tsx src/scripts/bridge.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@qvac/sdk": "^0.9.1",
+    "@solana/spl-token": "^0.4.6",
+    "@solana/web3.js": "^1.95.0",
+    "bs58": "^5.0.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "fluent-ffmpeg": "^2.1.3",
+    "hyperswarm": "^4.7.0",
+    "multer": "^2.1.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/fluent-ffmpeg": "^2.1.28",
+    "@types/multer": "^2.1.0",
+    "@types/node": "^20.11.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0"
+  }
+}

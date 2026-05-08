@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'BrandFont';
+  src: url('/fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BrandFont';
+  src: url('/fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7SUc.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+html, body, #root {
+  background-color: transparent !important;
+  font-family: 'BrandFont', sans-serif !important;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+  color: inherit;
+}
+
+/* Prevent iOS Safari from auto-zooming form fields on focus. */
+input,
+textarea,
+select {
+  font-size: 16px;
+}
+
+/* Themed scrollbars — subtle on light canvas, emerald on hover. */
+.overflow-y-auto::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.overflow-y-auto::-webkit-scrollbar-track {
+  background: transparent;
+}
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 176, 0.35);
+  border-radius: 3px;
+}
+.overflow-y-auto::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 147, 147, 0.55);
+}
+
+/* Selection highlight in the Tether emerald. */
+::selection {
+  background: rgba(0, 147, 147, 0.18);
+  color: #1A202C;
+}
